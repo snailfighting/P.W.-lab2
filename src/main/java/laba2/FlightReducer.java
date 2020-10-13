@@ -1,2 +1,4 @@
-package laba2;public class FlightReducer {
+package laba2;
+
+public class FlightReducer {
 }
