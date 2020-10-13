@@ -20,7 +20,7 @@ public class FlightJob {
             FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
             job.setMapperClass(FlightMapper.class);
-            job.setReducerClass(FlightReduce.class);
+            job.setReducerClass(FlightReducer.class);
 
         }
 }
