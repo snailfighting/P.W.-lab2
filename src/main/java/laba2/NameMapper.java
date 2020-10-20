@@ -3,11 +3,9 @@ package laba2;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
-import java.util.Iterator;
 
-public class FlightReducer extends Reducer<Text,IntWritable,Text,LongWritable>{
-
+public class NameMapper extends Mapper<LongWritable, Text,Text,IntWritable> {
 }
