@@ -13,7 +13,9 @@ public class FlightMapper extends Mapper<LongWritable, Text, WritableComparable,
     private static final int ARR_DELAY = 17;
 
     private static float NullCheck (String current){
-        
+        if(current.equals("")) {
+            
+        }
     }
 
 }
