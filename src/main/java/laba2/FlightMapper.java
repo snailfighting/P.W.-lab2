@@ -23,7 +23,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, WritableComparable,
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] table = value.toString().split(DELIMITER);
-        
+        int dest_aeroport_id = 
 
     }
 }
