@@ -12,6 +12,8 @@ public class FlightMapper extends Mapper<LongWritable, Text, WritableComparable,
     private static final int DEST_AEROPORT_ID = 14;
     private static final int ARR_DELAY = 17;
 
-    private static float NullCheck ()
+    private static float NullCheck (String current){
+        
+    }
 
 }
