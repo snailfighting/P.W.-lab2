@@ -10,6 +10,6 @@ import java.io.IOException;
 public class FlightMapper extends Mapper<LongWritable, Text, WritableComparable, IntWritable>{
     private static final String DELIMITER = ",";
     private static final int DEST_AEROPORT_ID = 14;
-    private 
+    private static final int ARR_
 
 }
