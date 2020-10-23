@@ -1,2 +1,4 @@
-package laba2;public class FlightWrComparible {
+package laba2;
+
+public class FlightWrComparible {
 }
