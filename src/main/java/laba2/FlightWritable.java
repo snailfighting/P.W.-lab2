@@ -16,7 +16,9 @@ public class FlightWritable implements Writable {
 
     public FlightWritable(){}
 
-    
+    public FlightWritable(float arr_delay, float cancelled, float air_time, int dest_aeroport_id){
+        
+    }
 
 
 
