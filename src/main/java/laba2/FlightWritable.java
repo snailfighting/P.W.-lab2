@@ -25,7 +25,7 @@ public class FlightWritable implements Writable {
 
     @Override
     public void write(DataOutput dataOutput) throws IOException{
-        dataOutput.write(th);
+        dataOutput.writeFloat(this.air_time);
     }
 
 
