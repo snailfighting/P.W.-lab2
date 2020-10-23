@@ -33,7 +33,10 @@ public class FlightWritable implements Writable {
 
     @Override
     public void readFields(DataInput dataInput) throws  IOException{
-        this.air_time = 
+        this.air_time = dataInput.readFloat();
+        this.arr_delay = dataInput.readFloat();
+        this.cancelled = dataInput.readFloat();
+        this.dest_aeroport_id = dataInput.readInt();
     }
 
 
