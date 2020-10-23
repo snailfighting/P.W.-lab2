@@ -23,6 +23,7 @@ public class FlightWritable implements Writable {
         this.dest_aeroport_id = dest_aeroport_id;
     }
 
+    @Override
     
 
 
