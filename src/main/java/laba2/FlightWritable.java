@@ -24,7 +24,9 @@ public class FlightWritable implements Writable {
     }
 
     @Override
-    public void write(DataOutput dataOutput) throws E
+    public void write(DataOutput dataOutput) throws IOException{
+        
+    }
 
 
 
