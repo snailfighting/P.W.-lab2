@@ -24,7 +24,7 @@ public class FlightWritable implements Writable {
     }
 
     @Override
-    
+    public 
 
 
 
