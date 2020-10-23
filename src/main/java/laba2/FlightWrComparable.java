@@ -28,6 +28,10 @@ public class FlightWrComparable implements WritableComparable {
         this.aeroport_id = dataInput.readInt();
         this.indenity = dataInput.readInt();
     }
+    
+    public int getID() {
+        return this.aeroport_id;
+    }
 
     @Override
     public int compareTo(Object o) {
