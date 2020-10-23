@@ -1,4 +1,4 @@
 package laba2;
 
-public class WritableComparable {
+public class WritableComparable implements WritableComparable{
 }
