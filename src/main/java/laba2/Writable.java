@@ -9,6 +9,7 @@ import java.io.IOException;
 
 public class Writable implements Writable {
     private float arr_delay;
+    private float cancelled;
     
 
 }
