@@ -31,7 +31,10 @@ public class FlightWritable implements Writable {
         dataOutput.writeInt(this.dest_aeroport_id);
     }
 
-    
+    @Override
+    public void readFields(DataInput dataInput) throws  IOException{
+        
+    }
 
 
 
