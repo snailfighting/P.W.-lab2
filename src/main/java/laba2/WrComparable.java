@@ -1,2 +1,4 @@
-package laba2;public class WrComparable {
+package laba2;
+
+public class WrComparable {
 }
