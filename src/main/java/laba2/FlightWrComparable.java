@@ -40,6 +40,7 @@ public class FlightWrComparable implements WritableComparable {
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        FlightWrComparable that = (FlightWrComparable) o;
+        
     }
 }
