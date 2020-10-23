@@ -1,2 +1,4 @@
-package laba2;public class FlightWritable {
+package laba2;
+
+public class FlightWritable {
 }

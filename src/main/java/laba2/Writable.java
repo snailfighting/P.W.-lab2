@@ -11,6 +11,11 @@ public class Writable implements Writable {
     private float arr_delay;
     private float cancelled;
     private float air_time;
-    
+
+    private int dest_aeroport_id;
+
+    public Writable(){}
+
+
 
 }
