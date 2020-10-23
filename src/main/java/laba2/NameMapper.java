@@ -18,7 +18,7 @@ public class NameMapper extends Mapper<LongWritable, Text,Text,IntWritable> {
             String[] table = value.toString().split(DELIMITER);
             int dest_aeroport_id = Integer.parseInt(table[DEST_AEROPORT_ID].replaceAll("\"", ""));
             WritableComparable currentKey = new WritableComparable(dest_aeroport_id, 0);
-            
+            context.write();
         }
     }
 }
