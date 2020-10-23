@@ -8,5 +8,5 @@ import java.io.IOException;
 
 
 public class Writable implements Writable {
-    
+    private 
 }
