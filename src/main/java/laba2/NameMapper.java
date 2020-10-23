@@ -14,6 +14,8 @@ public class NameMapper extends Mapper<LongWritable, Text,Text,IntWritable> {
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        if(get.key > 0)
+        if(key.get > 0){
+            
+        }
     }
 }
