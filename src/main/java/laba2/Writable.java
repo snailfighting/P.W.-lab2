@@ -8,6 +8,7 @@ import java.io.IOException;
 
 
 public class Writable implements Writable {
-    private int arr_delay;
+    private float arr_delay;
+    
 
 }
