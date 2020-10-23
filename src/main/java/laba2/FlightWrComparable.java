@@ -41,6 +41,14 @@ public class FlightWrComparable implements WritableComparable {
     @Override
     public int compareTo(Object o) {
         FlightWrComparable that = (FlightWrComparable) o;
-        
+        if (this.aeroportID > second.aeroportID) {
+            return 1;
+        } else if (this.aeroportID < second.aeroportID) {
+            return -1;
+        } else if (this.indenity > second.indenity) {
+            return 1;
+        } else {
+            return -1;
+        }
     }
 }
