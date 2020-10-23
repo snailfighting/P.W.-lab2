@@ -16,6 +16,7 @@ public class NameMapper extends Mapper<LongWritable, Text,Text,IntWritable> {
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         if(key.get() > 0){
             String[] table = value.toString().split(DELIMITER);
+            int dest_aeroport_id = Integer.parseInt(table[DEST_AEROPORT_ID]);
         }
     }
 }
