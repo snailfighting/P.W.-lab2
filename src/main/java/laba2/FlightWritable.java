@@ -16,6 +16,8 @@ public class FlightWritable implements Writable {
 
     public FlightWritable(){}
 
+    
+
 
 
 }
