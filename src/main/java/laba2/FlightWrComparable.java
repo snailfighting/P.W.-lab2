@@ -34,7 +34,8 @@ public class FlightWrComparable implements WritableComparable {
     }
 
     public int comparableID(Object o){
-        FlightWrComparable that = 
+        FlightWrComparable that = (FlightWrComparable) o;
+        return 
     }
 
     @Override
