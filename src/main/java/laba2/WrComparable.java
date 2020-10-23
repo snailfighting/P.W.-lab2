@@ -1,4 +1,7 @@
 package laba2;
 
-public class WrComparable {
+import org.apache.hadoop.io.WritableComparable;
+
+public class WrComparable implements WritableComparable{
+    
 }
