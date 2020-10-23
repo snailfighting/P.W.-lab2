@@ -19,7 +19,8 @@ public class FlightWrComparable implements WritableComparable {
     }
     @Override
     public void write(DataOutput dataOutput) throws IOException {
-        
+        dataOutput.writeInt(aeroport_id);
+        dataOutput.writeInt(indenity);
     }
 
     @Override
