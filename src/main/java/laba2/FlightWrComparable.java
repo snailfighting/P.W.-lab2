@@ -4,6 +4,6 @@ import org.apache.hadoop.io.WritableComparable;
 
 public class FlightWrComparable implements WritableComparable {
 
-    public
+    public int 
 
 }
