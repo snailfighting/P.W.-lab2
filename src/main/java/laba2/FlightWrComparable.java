@@ -13,9 +13,13 @@ public class FlightWrComparable implements WritableComparable {
 
     public FlightWrComparable(){}
 
+    public void FlightWrComparable(int aeroport_id, int indenity){
+        this.aeroport_id = aeroport_id;
+        this.indenity = indenity;
+    }
     @Override
     public void write(DataOutput dataOutput) throws IOException {
-
+        
     }
 
     @Override
