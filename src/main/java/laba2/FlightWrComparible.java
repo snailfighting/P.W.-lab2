@@ -1,4 +1,9 @@
 package laba2;
 
-public class FlightWrComparible {
+import org.apache.hadoop.io.WritableComparable;
+
+public class FlightWrComparable implements WritableComparable{
+    private  int aeroportID;
+    private int idenity;
+
 }
