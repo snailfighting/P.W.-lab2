@@ -30,7 +30,7 @@ public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWrit
             count++;
         }
         if (count > 0){
-            context.write(inf, new Text ());
+            context.write(inf, new Text (min + max + average));
         }
 
     }
