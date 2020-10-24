@@ -22,7 +22,8 @@ public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWrit
         Text inf = new Text(iterator.next());
 
         while(iterator.hasNext()){
-            float current = Float.parseFloat(iterator.next().toString())
+            float current = Float.parseFloat(iterator.next().toString());
+            
         }
 
     }
