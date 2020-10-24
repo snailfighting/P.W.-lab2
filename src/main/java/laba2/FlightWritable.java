@@ -38,7 +38,5 @@ public class FlightWritable implements Writable {
         this.cancelled = dataInput.readFloat();
         this.dest_aeroport_id = dataInput.readInt();
     }
-
-
-
+    
 }
