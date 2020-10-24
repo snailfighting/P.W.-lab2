@@ -11,7 +11,7 @@ import java.util.Iterator;
 public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWritable>{
 
     @Override
-    protected void reduce(FlightWrComparable key, Iterable<Text> values, Context context) throws {
+    protected void reduce(FlightWrComparable key, Iterable<Text> values, Context context) throws IOException, {
 
     }
 }
