@@ -16,7 +16,7 @@ public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWrit
         float min = 0.0f;
         int count = 0;
 
-        float avera
+        float average = 0.0f;
 
         Iterator<Text> iterator = values.iterator();
         Text inf = new Text(iterator.next());
