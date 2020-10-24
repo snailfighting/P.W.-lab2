@@ -8,6 +8,6 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 import java.util.Iterator;
 
-public class FlightReducer extends Reducer<Text,IntWritable,Text,LongWritable>{
-
+public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWritable>{
+    
 }
