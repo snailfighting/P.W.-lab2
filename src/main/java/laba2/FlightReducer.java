@@ -23,7 +23,14 @@ public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWrit
 
         while(iterator.hasNext()){
             float current = Float.parseFloat(iterator.next().toString());
-            
+            min = Float.min(min, current);
+            max = Float.max(max, current);
+
+            average += current;
+            count++;
+        }
+        if (count > 0){
+            context.write();
         }
 
     }
