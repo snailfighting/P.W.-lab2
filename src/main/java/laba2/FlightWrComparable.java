@@ -17,17 +17,6 @@ public class FlightWrComparable implements WritableComparable {
         this.aeroport_id = aeroport_id;
         this.indenity = indenity;
     }
-    @Override
-    public void write(DataOutput dataOutput) throws IOException {
-        dataOutput.writeInt(aeroport_id);
-        dataOutput.writeInt(indenity);
-    }
-
-    @Override
-    public void readFields(DataInput dataInput) throws IOException {
-        this.aeroport_id = dataInput.readInt();
-        this.indenity = dataInput.readInt();
-    }
 
     public int getID() {
         return this.aeroport_id;
@@ -44,4 +33,17 @@ public class FlightWrComparable implements WritableComparable {
         return this.aeroport_id - that.aeroport_id > 0 ? 1 :
                 ((this.aeroport_id - that.aeroport_id == 0) && (this.indenity - that.indenity > 0 ) ? 1 : -1);
     }
+
+    @Override
+    public void write(DataOutput dataOutput) throws IOException {
+        dataOutput.writeInt(aeroport_id);
+        dataOutput.writeInt(indenity);
+    }
+
+    @Override
+    public void readFields(DataInput dataInput) throws IOException {
+        this.aeroport_id = dataInput.readInt();
+        this.indenity = dataInput.readInt();
+    }
+
 }
