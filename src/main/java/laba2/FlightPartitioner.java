@@ -1,2 +1,4 @@
-package laba2;public class FlightPartitioner {
+package laba2;
+
+public class FlightPartitioner {
 }
