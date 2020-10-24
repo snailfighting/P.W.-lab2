@@ -14,9 +14,12 @@ public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWrit
     protected void reduce(FlightWrComparable key, Iterable<Text> values, Context context) throws IOException,InterruptedException{
         float max = 0.0f;
         float min = 0.0f;
+        int count = 0;
 
         Iterator<Text> iterator = values.iterator();
         Text inf = new Text(iterator.next());
+
+        
 
     }
 }
