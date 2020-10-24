@@ -25,9 +25,9 @@ public class FlightJob {
             FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
            // job.setMapperClass(FlightMapper.class);
-            job.setGroupingComparatorClass(GroupingComparatorClass.class);
+            job.setGroupingComparatorClass(FlightGroupingComparatorClass.class);
             job.setMapOutputKeyClass(FlightWrComparable.class);
-            job.setPartitionerClass(Partitioner.class);
+            job.setPartitionerClass(FlightPartitioner.class);
             job.setReducerClass(FlightReducer.class);
             job.setMapOutputValueClass(Text.class);
 

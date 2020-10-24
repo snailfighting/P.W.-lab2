@@ -1,2 +1,4 @@
-package laba2;public class FlightGroupingComparatorClass {
+package laba2;
+
+public class FlightGroupingComparatorClass {
 }
