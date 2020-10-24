@@ -8,7 +8,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 import java.util.Iterator;
 
-public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWritable>{
+public class FlightReducer extends Reducer<FlightWrComparable,Text,Text, Text>{
 
     @Override
     protected void reduce(FlightWrComparable key, Iterable<Text> values, Context context) throws IOException,InterruptedException{
@@ -30,7 +30,7 @@ public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWrit
             count++;
         }
         if (count > 0){
-            context.write(inf, new Text (min + max + average));
+            context.write(inf, new Text ("MINDELAY: " + min + "; MAXDELAY: " + max + "; AVERAGE: " + average + ";"));
         }
 
     }
