@@ -13,6 +13,6 @@ public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWrit
     @Override
     protected void reduce(FlightWrComparable key, Iterable<Text> values, Context context) throws IOException,InterruptedException{
         Iterator<Text> iterator = values.iterator();
-        
+        Text inf =
     }
 }
