@@ -9,5 +9,9 @@ import java.io.IOException;
 import java.util.Iterator;
 
 public class FlightReducer extends Reducer<FlightWrComparable,Text,Text,LongWritable>{
-    
+
+    @Override
+    protected void reduce(FlightWrComparable key, Iterable<Text> values, Context context){
+        
+    }
 }
