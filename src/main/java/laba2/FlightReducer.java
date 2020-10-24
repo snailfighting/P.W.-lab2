@@ -31,6 +31,8 @@ public class FlightReducer extends Reducer<FlightWrComparable,Text,Text, Text>{
         }
         if (count > 0){
             context.write(inf, new Text ("MINDELAY: " + min + "; MAXDELAY: " + max + "; AVERAGE: " + average + ";"));
+        }else{
+            context.write(inf, new Text("MINDELAY: " + min + "; MAXDELAY: " + max + "; AVERAGE: " + 0.0f + ";"));
         }
 
     }
