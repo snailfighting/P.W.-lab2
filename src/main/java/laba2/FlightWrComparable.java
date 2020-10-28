@@ -13,6 +13,9 @@ public class FlightWrComparable implements WritableComparable {
 
     public FlightWrComparable(){}
 
+    public FlightWrComparable(int dest_aeroport_id, int i) {
+    }
+
     public void FlightWrComparable(int aeroport_id, int indenity){
         this.aeroport_id = aeroport_id;
         this.indenity = indenity;
