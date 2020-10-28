@@ -12,10 +12,11 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWrComparable,
     private static final int DEST_AEROPORT_ID = 14;
     private static final int ARR_DELAY = 17;
     private static final String NULLSTRING = "";
+    private static final float FLOAT0 = 0.0f;
 
     private static float NullCheck (String current){
         if(current.equals(NULLSTRING)) {
-            return 0.0F;
+            return FLOAT0;
         }else {
             return Float.parseFloat(current);
         }
@@ -27,7 +28,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWrComparable,
         int dest_aeroport_id = Integer.parseInt(table[DEST_AEROPORT_ID]);
         float arr_delay = NullCheck(table[ARR_DELAY]);
 
-        if (ARR_DELAY > 0.0f){
+        if (ARR_DELAY > FLOAT0){
             FlightWrComparable current = new FlightWrComparable(dest_aeroport_id, 1);
             context.write(current, new Text(table[ARR_DELAY]));
         }
