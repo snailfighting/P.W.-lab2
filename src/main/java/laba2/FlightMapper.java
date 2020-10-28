@@ -11,9 +11,10 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWrComparable,
     private static final String DELIMITER = ",";
     private static final int DEST_AEROPORT_ID = 14;
     private static final int ARR_DELAY = 17;
+    private static final String NULLSTRING = "";
 
     private static float NullCheck (String current){
-        if(current.equals("")) {
+        if(current.equals(NULLSTRING)) {
             return 0.0F;
         }else {
             return Float.parseFloat(current);
