@@ -26,5 +26,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWrComparable,
         int dest_aeroport_id = Integer.parseInt(table[DEST_AEROPORT_ID]);
         float arr_delay = NullCheck(table[ARR_DELAY]);
 
+        if (ARR_DELAY >
+
     }
 }
