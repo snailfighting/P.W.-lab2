@@ -27,5 +27,4 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWrComparable,
         float arr_delay = NullCheck(table[ARR_DELAY]);
 
     }
-    vvv
 }
