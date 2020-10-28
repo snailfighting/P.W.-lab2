@@ -28,7 +28,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWrComparable,
 
         if (ARR_DELAY > 0.0f){
             FlightWrComparable current = new FlightWrComparable(dest_aeroport_id, 1);
-            context.write(current, Text);
+            context.write(current, Text(table[]));
         }
 
     }
